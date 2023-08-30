@@ -1,0 +1,32 @@
+@media (max-width: 700px) {
+
+    nav > ul{
+        display: none;
+    }
+
+.icon{
+    display: inline-block;
+     color: white;
+    font-size: 30px; 
+    
+
+}
+nav > ul{
+    padding: 10px 0px 10px 15px;
+    width: 100vw;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    box-shadow: 0px 8px 6px rgba(255, 255, 255, 0.1);
+
+}
+nav > ul> li {
+    padding: 5px 0px 10px 10px;
+    border-bottom: 1px solid white;
+}
+
+
+
+
+}
+
