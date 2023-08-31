@@ -122,6 +122,20 @@ html {
     padding: 3px;
 }
 
+
+
+.header .h-theme {
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: center;
+
+
+
+}
+
+
 .header ul {
 
     display: flex;
@@ -176,7 +190,7 @@ html {
 
 
 /* Styles for screens less than 530px */
-@media (max-width: 529px) {
+@media (max-width: 815px) {
     .header ul {
         display: none;
     }
