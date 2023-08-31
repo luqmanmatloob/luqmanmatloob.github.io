@@ -21,20 +21,22 @@
             <div class="header-wrapper">
                 <p class="logo"><a href="#home">luqman</a></p>
 
-                <div class="h-theme">
-                <button class="theme-btn-1" onclick="theme_blue()"></button>
-                <button class="theme-btn-2" onclick="theme_red()"></button>
-                <button class="theme-btn-3" onclick="theme_orange()"></button>
-                </div>
-                
+
+
                 <ul id="nav-list">
                     <li><a href="#about">about</a></li>
                     <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
+
+                <!-- <div class="h-theme">
+                    <button class="theme-btn-4" onclick="theme_dark()"></button>
+                </div> -->
+
                 <a class="hamburger" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
+
 
             </div>
         </div>
@@ -218,9 +220,11 @@
             <div class="theme-wrapper">
 
                 <div>
+                    <button class="theme-btn-0" onclick="theme_default()"></button>
                     <button class="theme-btn-1" onclick="theme_blue()"></button>
                     <button class="theme-btn-2" onclick="theme_red()"></button>
                     <button class="theme-btn-3" onclick="theme_orange()"></button>
+                    <button class="theme-btn-4" onclick="theme_dark()"></button>
 
 
 
@@ -298,7 +302,28 @@
 
 
 
+        function theme_default() {
+
+            // Select the :root element.
+            const root = document.querySelector(':root');
+
+            // Create a variable to store the new value for the `--color` variable.
+            const theme = 'rgb(66, 135, 245)';
+            const body = 'rgb(255, 255, 255)';
+            const typography = 'rgb(0, 0, 0)';
+
+            // Set the value of the `--color` variable to the new value.
+            root.style.setProperty('--theme', theme);
+            root.style.setProperty('--page-background', body);
+            root.style.setProperty('--regular-color', typography);
+
+
+        }
+
+
+
         function theme_blue() {
+            theme_default()
 
             // Select the :root element.
             const root = document.querySelector(':root');
@@ -317,6 +342,7 @@
 
 
         function theme_red() {
+            theme_default()
 
             // Select the :root element.
             const root = document.querySelector(':root');
@@ -331,6 +357,7 @@
 
 
         function theme_orange() {
+            theme_default();
 
             // Select the :root element.
             const root = document.querySelector(':root');
@@ -340,6 +367,28 @@
 
             // Set the value of the `--color` variable to the new value.
             root.style.setProperty('--theme', newColor);
+
+        }
+
+
+
+
+
+        function theme_dark() {
+
+
+            // Select the :root element.
+            const root = document.querySelector(':root');
+
+            // Create a variable to store the new value for the `--color` variable.
+            const theme = 'rgb(8, 79, 194)';
+            const body = 'rgb(0, 0, 0)';
+            const typography = 'rgb(255, 255, 255)';
+
+            // Set the value of the `--color` variable to the new value.
+            root.style.setProperty('--theme', theme);
+            root.style.setProperty('--page-background', body);
+            root.style.setProperty('--regular-color', typography);
 
         }
 

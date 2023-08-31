@@ -129,7 +129,7 @@ html {
     display: flex;
     align-items: center;
     margin-left: auto;
-    justify-content: center;
+    justify-content: flex-end;
 
 
 
@@ -645,12 +645,26 @@ html {
 .theme-wrapper{
     margin: 40px ;
     display: flex;
+    
     align-items: center;
     justify-content: center;
-    padding: 50px 70px;
+    padding: 50px 10px;
    
 
 }
+
+/* default */
+
+.theme-btn-0{
+    margin: 10px ;
+
+color: rgb(66, 135, 245);
+padding: 15px;
+background-color: rgb(66, 135, 245);
+border-radius: 100%;
+border:0px;
+}
+
 
 
 .theme-btn-1{
@@ -684,6 +698,19 @@ background-color: rgb(245, 161, 66);
 border-radius: 100%;
 border:0px;
 
+
+}
+
+.theme-btn-4{
+    margin: 10px ;
+
+padding: 15px;
+background-color: rgb(66, 66, 66);
+border-radius: 100%;
+border:0px;
+border: white 3px solid;
+box-shadow: 0 0 10px white;
+margin: 0px 0px 5px 0px;
 
 }
 
