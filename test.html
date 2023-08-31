@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --box-color: blue;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: var(--box-color);
+    }
+  </style>
+  <title>CSS Variable Change</title>
+</head>
+<body>
+
+
+
+    
+  <div class="box"></div>
+  <button id="changeButton">Change Color</button>
+
+
+
+  <script>
+    const changeButton = document.getElementById('changeButton');
+    const root = document.documentElement;
+
+    changeButton.addEventListener('click', () => {
+      // Set the value of the --box-color variable
+      root.style.setProperty('--box-color', 'red'); // Change to the color you want
+    });
+  </script>
+
+
+
+
+
+
+</body>
+</html>

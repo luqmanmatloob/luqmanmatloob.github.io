@@ -5,11 +5,54 @@
 
 body {
     font-family: sans-serif;
+    color: var(--regular-color);
+    background-color: var(--page-background);
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+
+
+
+:root {
+      /*header, footer, hero img background, buttons, contactform border, */
+    --theme:#4287f5;
+
+      /* for name  */
+    --text-on-theme:  #ffffff;
+
+
+      /* for name  */
+    --theme-gradient:  #00177e;
+
+
+      /* header text color  */
+    --mobile-header-text:  #4287f5;
+
+      /* regular text color,,  in body  */ 
+    --regular-color:  #000000;
+
+
+      /* regular text color,,,   in body*/
+    --page-background:  #ffffff;
+
+    
+    
+
+
+
+
+  }
+
+
+
+
+
+
+
+
 
 
 
@@ -26,7 +69,7 @@ html {
     top: 0;
     right: 0;
     left: 0;
-    background-color: #4287f5;
+    background-color: var(--theme);
     z-index: 1;
 
 
@@ -68,13 +111,13 @@ html {
 
 .logo>a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: --text-on-theme);
 
 }
 
 
 .logo:hover {
-    border: solid rgb(255, 255, 255) 2px;
+    border: solid var(--text-on-theme) 2px;
     border-radius: 5px;
     padding: 3px;
 }
@@ -100,7 +143,7 @@ html {
 }
 
 .header a {
-    color: rgb(255, 255, 255);
+    color: var(--text-on-theme);
     size: 1.50px;
     text-transform: uppercase;
     text-decoration: none;
@@ -112,7 +155,7 @@ html {
 }
 
 .header ul li a:hover {
-    border: solid rgb(255, 255, 255) 2px;
+    border: solid var(--text-on-theme) 2px;
     border-radius: 5px;
     padding: 3px;
 }
@@ -140,7 +183,7 @@ html {
 
     .hamburger {
         display: block;
-        color: rgb(255, 255, 255);
+        color: var(--text-on-theme);
         font-size: 1.80em;
 
         display: flex;
@@ -164,14 +207,14 @@ html {
     }
 
     .header ul>li {
-        background-color: rgb(255, 255, 255);
+        background-color: var(--text-on-theme);
 
         padding: 20px 0px 3px 5%;
         border-bottom: 1px solid rgb(213, 213, 213);
     }
 
     .header ul>li a{
-        color: #4287f5;
+        color: var(--theme);
     }
 }
 
@@ -232,7 +275,7 @@ html {
 
 .h1-name {
     font-weight: bold;
-    background: linear-gradient(135deg, #00177e, #4287f5);
+    background: linear-gradient(135deg, var(--theme-gradient), var(--theme));
     background-clip: text;
     -webkit-background-clip: text; /* For Safari/WebKit browsers */
     color: transparent;
@@ -240,7 +283,7 @@ html {
 
 
 .h-right{
-    background-color: #4287f5;
+    background-color: var(--theme);
 
   
  
@@ -269,15 +312,15 @@ html {
 
 .btn {
     width: 150px;
-    color: white;
-    background-color: #4287f5;
+    color: var(--text-on-theme);
+    background-color: var(--theme);
     font-size: 15px;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 7px 4px 0px 5px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: solid #ffffff 2px;
+    border: solid var(--text-on-theme) 0px;
     transition: transform 0.2s;
     margin: 5px 10px;
     padding: 10px;
@@ -289,7 +332,7 @@ html {
 
 
 .btn:active {
-    background-color: #2162ca;
+    background-color: var(--theme-gradient);
 
 }
 
@@ -324,7 +367,7 @@ html {
 
     .h-left h1 {
         font-size: 2em;
-        font-weight: bolds;
+        font-weight: bold;
     }
 
 }
@@ -381,7 +424,7 @@ html {
 
 
 
-    border: solid black 1px;
+    border: solid var(--regular-color) 1px;
     padding: 0px 20px 20px 30px;
     margin: 10px 5px;
     border-radius: 10%;
@@ -391,7 +434,7 @@ html {
 
     display: none;
 
-    border: solid black 1px;
+    border: solid var(--regular-color) 1px;
     padding: 0px 20px 20px 30px;
     margin: 10px 5px;
     border-radius: 10%;
@@ -456,7 +499,7 @@ html {
 
 .portfolio-item {
 
-    border: solid rgb(222, 222, 222) 1px;
+    border: solid var(--text-on-theme) 1px;
     padding: 0px 10px 20px 10px;
     margin: 20px 20px;
     border-radius: 3%;
@@ -560,8 +603,8 @@ html {
     height: 40px;
     padding-right: 40px;
     margin: 15px;
-    color: black;
-    border: solid 1px #4287f5;
+    color: var(--regular-color);
+    border: solid 1px var(--theme);
     border-radius: 10px;
 }
 
@@ -581,12 +624,66 @@ html {
 
 /*
 --------------------------------------------------------
+                      theme
+--------------------------------------------------------
+*/
+
+.theme-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+
+}
+
+
+.theme-btn-1{
+color: rgb(99, 205, 55);
+padding: 15px;
+background-color: rgb(99, 205, 55);
+border-radius: 100%;
+border:0px;
+
+
+}
+
+.theme-btn-2{
+color: rgb(245, 66, 113);
+padding: 15px;
+background-color: rgb(245, 66, 113);
+border-radius: 100%;
+border:0px;
+}
+
+.theme-btn-3{
+color: rgb(245, 161, 66);
+padding: 15px;
+background-color: rgb(245, 161, 66);
+border-radius: 100%;
+border:0px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+--------------------------------------------------------
                       footer
 --------------------------------------------------------
 */
 
 .footer {
-    background-color: #4287f5;
+    background-color: var(--theme);
 }
 
 
@@ -619,7 +716,7 @@ html {
 
 .footer-left p {
 
-    color: white;
+    color: var(--text-on-theme);
     font-size: 12px;
 
 }
@@ -642,7 +739,7 @@ html {
 
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: var(--text-on-theme);
     padding: 5px;
     font-size: 12px;
 
@@ -653,7 +750,7 @@ html {
 .footer-right a:hover {
 
 
-    border: 2px solid white;
+    border: 2px solid var(--text-on-theme);
 }
 
 

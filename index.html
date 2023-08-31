@@ -206,9 +206,23 @@
 
 
 
+    <section class="theme" id="theme">
+        <div class="theme-container">
+            <div class="theme-wrapper">
+
+                <div>
+                    <button class="theme-btn-1" onclick="theme_blue()"></button>
+                    <button class="theme-btn-2" onclick="theme_red()"></button>
+                    <button class="theme-btn-3" onclick="theme_orange()"></button>
 
 
 
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 
 
 
@@ -260,6 +274,73 @@
 
 
     <script>
+
+
+        // const changeButton = document.getElementById('changeButton');
+        // const root = document.documentElement;
+
+        // changeButton.addEventListener('click', () => {
+        //     // Set the value of the --box-color variable
+        //     root.style.setProperty('--theme', 'rgb(255, 192, 203)'); // Change to the color you want
+        // });
+
+
+
+
+
+
+
+
+        function theme_blue() {
+
+            // Select the :root element.
+            const root = document.querySelector(':root');
+
+            // Create a variable to store the new value for the `--color` variable.
+            const newColor = 'rgb(99, 205, 55)';
+
+            // Set the value of the `--color` variable to the new value.
+            root.style.setProperty('--theme', newColor);
+
+        }
+
+
+
+
+
+
+        function theme_red() {
+
+            // Select the :root element.
+            const root = document.querySelector(':root');
+
+            // Create a variable to store the new value for the `--color` variable.
+            const newColor = 'rgb(245, 66, 113)';
+
+            // Set the value of the `--color` variable to the new value.
+            root.style.setProperty('--theme', newColor);
+
+        }
+
+
+        function theme_orange() {
+
+            // Select the :root element.
+            const root = document.querySelector(':root');
+
+            // Create a variable to store the new value for the `--color` variable.
+            const newColor = 'rgb(245, 161, 66)';
+
+            // Set the value of the `--color` variable to the new value.
+            root.style.setProperty('--theme', newColor);
+
+        }
+
+
+
+
+
+
         function myFunction() {
             var x = document.getElementById("nav-list");
             if (x.style.display === "block") {
