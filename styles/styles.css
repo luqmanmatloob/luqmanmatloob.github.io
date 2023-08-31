@@ -629,16 +629,19 @@ html {
 */
 
 .theme-wrapper{
+    margin: 40px ;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    background-color: white;
+    padding: 50px 70px;
+   
 
 }
 
 
 .theme-btn-1{
+    margin: 10px ;
+
 color: rgb(99, 205, 55);
 padding: 15px;
 background-color: rgb(99, 205, 55);
@@ -649,6 +652,8 @@ border:0px;
 }
 
 .theme-btn-2{
+    margin: 10px ;
+
 color: rgb(245, 66, 113);
 padding: 15px;
 background-color: rgb(245, 66, 113);
@@ -657,6 +662,8 @@ border:0px;
 }
 
 .theme-btn-3{
+    margin: 10px ;
+
 color: rgb(245, 161, 66);
 padding: 15px;
 background-color: rgb(245, 161, 66);
