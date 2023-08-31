@@ -4,9 +4,17 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: sans-serif ;
 }
 
+
+
+
+/*
+--------------------------------------------------------
+                      header
+--------------------------------------------------------
+*/
 .header {
     height: 70px;
 
@@ -15,7 +23,7 @@ body {
 .container {
     max-width: 1250px;
     display: flex;
-    padding: 20px 40px;
+    padding: 20px 5%;
     align-items: center;
     margin: 0 auto;
 
