@@ -79,7 +79,7 @@ html {
     padding: 3px;
 }
 
-ul {
+.header ul {
 
     display: flex;
     align-items: center;
@@ -94,12 +94,12 @@ ul {
     display: none;
 }
 
-ul li {
+.header li {
     padding: 0px 0px 0px 15%;
     list-style: none;
 }
 
-ul li a {
+.header a {
     color: black;
     size: 1.50px;
     text-transform: uppercase;
@@ -111,7 +111,7 @@ ul li a {
 
 }
 
-ul li a:hover {
+.header ul li a:hover {
     border: solid black 2px;
     border-radius: 5px;
     padding: 3px;
@@ -122,7 +122,7 @@ ul li a:hover {
 
 /* Styles for screens less than 530px */
 @media (max-width: 529px) {
-    ul {
+   .header ul {
         display: none;
     }
 
@@ -137,7 +137,7 @@ ul li a:hover {
         justify-content: flex-end;
     }
 
-    ul {
+    .header ul {
         width: 100vw;
         position: absolute;
         top: 70px;
@@ -151,7 +151,7 @@ ul li a:hover {
 
     }
 
-    ul>li {
+    .header ul>li {
         background-color: rgb(255, 255, 255);
 
         padding: 20px 0px 3px 5%;
@@ -511,3 +511,49 @@ ul li a:hover {
   }
   
   
+
+
+
+
+
+
+
+
+/*
+--------------------------------------------------------
+                      footer
+--------------------------------------------------------
+*/
+
+.footer{
+    background-color: rgb(186, 186, 186);
+}
+
+
+  
+.footer-container {
+    
+    max-width: 1250px;
+    display: flex;
+    padding: 20px 5%;
+    align-items: center;
+    margin: 0 auto;
+
+
+
+
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+
+.footer-right{
+    
+
+}
