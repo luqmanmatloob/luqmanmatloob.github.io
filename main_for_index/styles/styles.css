@@ -17,34 +17,34 @@ html {
 
 
 :root {
-      /*header, footer, hero img background, buttons, contactform border, */
-    --theme:#4287f5;
+    /*header, footer, hero img background, buttons, contactform border, */
+    --theme: #4287f5;
 
-      /* for name  */
-    --text-on-theme:  #ffffff;
-
-
-      /* for name  */
-    --theme-gradient:  #00177e;
+    /* for name  */
+    --text-on-theme: #ffffff;
 
 
-      /* header text color  */
-    --mobile-header-text:  #4287f5;
-
-      /* regular text color,,  in body  */ 
-    --regular-color:  #000000;
+    /* for name  */
+    --theme-gradient: #00177e;
 
 
-      /* regular text color,,,   in body*/
-    --page-background:  #ffffff;
+    /* header text color  */
+    --mobile-header-text: #4287f5;
 
-    
-    
+    /* regular text color,,  in body  */
+    --regular-color: #000000;
+
+
+    /* regular text color,,,   in body*/
+    --page-background: #ffffff;
 
 
 
 
-  }
+
+
+
+}
 
 
 
@@ -227,7 +227,7 @@ html {
         border-bottom: 1px solid rgb(213, 213, 213);
     }
 
-    .header ul>li a{
+    .header ul>li a {
         color: var(--theme);
     }
 }
@@ -291,37 +291,38 @@ html {
     font-weight: bold;
     background: linear-gradient(135deg, var(--theme-gradient), var(--theme));
     background-clip: text;
-    -webkit-background-clip: text; /* For Safari/WebKit browsers */
+    -webkit-background-clip: text;
+    /* For Safari/WebKit browsers */
     color: transparent;
 }
 
 
-.h-right{
+.h-right {
     background-color: var(--theme);
 
-  
- 
+
+
     border-top-left-radius: 350%;
     border-top-right-radius: 20%;
 
     border-bottom-right-radius: 188%;
-    border-bottom-left-radius: 10%; 
+    border-bottom-left-radius: 10%;
 
 
- 
-    
 
-    
+
+
+
 }
 
-    
+
 
 .hero-img {
     width: inherit;
     border-radius: 100%;
 
 
-    
+
 }
 
 .btn {
@@ -539,6 +540,7 @@ html {
     font-size: 16px;
     margin-left: 15px;
 }
+
 /* 
 .portfolio-container button {
     margin: 20px 0px;
@@ -642,78 +644,91 @@ html {
 --------------------------------------------------------
 */
 
-.theme-wrapper{
-    margin: 40px ;
+.theme-wrapper {
+    margin: 40px;
     display: flex;
-    
+
     align-items: center;
     justify-content: center;
     padding: 50px 10px;
-   
+
 
 }
 
 /* default */
 
-.theme-btn-0{
-    margin: 10px ;
+.theme-btn {}
 
-color: rgb(66, 135, 245);
-padding: 15px;
-background-color: rgb(66, 135, 245);
-border-radius: 100%;
-border:0px;
+
+
+
+.theme-btn-0 {
+    margin: 10px;
+
+    color: rgb(66, 135, 245);
+    padding: 15px;
+    background-color: rgb(66, 135, 245);
+    border-radius: 100%;
+    border: 0px;
+    transition: transform 0.2s;
 }
 
 
 
-.theme-btn-1{
-    margin: 10px ;
+.theme-btn-1 {
+    margin: 10px;
 
-color: rgb(99, 205, 55);
-padding: 15px;
-background-color: rgb(99, 205, 55);
-border-radius: 100%;
-border:0px;
-
-
-}
-
-.theme-btn-2{
-    margin: 10px ;
-
-color: rgb(245, 66, 113);
-padding: 15px;
-background-color: rgb(245, 66, 113);
-border-radius: 100%;
-border:0px;
-}
-
-.theme-btn-3{
-    margin: 10px ;
-
-color: rgb(245, 161, 66);
-padding: 15px;
-background-color: rgb(245, 161, 66);
-border-radius: 100%;
-border:0px;
+    color: rgb(99, 205, 55);
+    padding: 15px;
+    background-color: rgb(99, 205, 55);
+    border-radius: 100%;
+    border: 0px;
+    transition: transform 0.2s;
 
 
 }
 
-.theme-btn-4{
-    margin: 10px ;
+.theme-btn-2 {
+    margin: 10px;
 
-padding: 15px;
-background-color: rgb(66, 66, 66);
-border-radius: 100%;
-border:0px;
-border: white 3px solid;
-box-shadow: 0 0 10px white;
-margin: 0px 0px 5px 0px;
+    color: rgb(245, 66, 113);
+    padding: 15px;
+    background-color: rgb(245, 66, 113);
+    border-radius: 100%;
+    border: 0px;
+    transition: transform 0.2s;
+}
+
+.theme-btn-3 {
+    margin: 10px;
+
+    color: rgb(245, 161, 66);
+    padding: 15px;
+    background-color: rgb(245, 161, 66);
+    border-radius: 100%;
+    border: 0px;
+    transition: transform 0.2s;
+
 
 }
 
+.theme-btn-4 {
+    margin: 10px;
+
+    padding: 15px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 100%;
+    border: 0px;
+    border: white 3px solid;
+    box-shadow: 0 0 10px white;
+    margin: 0px 0px 5px 0px;
+    transition: transform 0.2s;
+
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
 
 
 
@@ -808,17 +823,10 @@ margin: 0px 0px 5px 0px;
 
         display: flex;
         flex-direction: column;
-    
+
     }
 }
 
 
 
 
-
-
-
-
-
-
-/* mobile menu */
