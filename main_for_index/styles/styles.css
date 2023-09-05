@@ -111,7 +111,7 @@ html {
 
 .logo>a {
     text-decoration: none;
-    color: --text-on-theme);
+    color: var(--text-on-theme);
 
 }
 
