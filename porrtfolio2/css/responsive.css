@@ -1,0 +1,28 @@
+@media (max-width: 390px) {
+
+  
+    
+
+}
+
+/* when the screen width is 390 pixels or more */
+@media (min-width: 390px) and (max-width: 600px) {
+    /*ipone 12*/
+   
+}
+
+/* when the screen width is 500 pixels or more */
+@media (min-width: 690px) and (max-width: 900px) {
+   
+}
+
+/* when the screen width is 640 pixels or more */
+@media (min-width: 900px) and (max-width: 1224px) {
+  
+}
+
+
+/* when the screen width is 1224 pixels or more */
+@media (min-width: 1224px){
+
+}

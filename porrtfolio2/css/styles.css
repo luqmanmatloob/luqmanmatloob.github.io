@@ -1,0 +1,338 @@
+/* 
+
+all custom classes have "c" prefix in name line "c-header"
+
+content
+
+variables
+rem responsiveness
+css reset
+custom scrollbar
+utility classes
+
+header
+hero
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+
+
+/*==========================================================*/
+/*--------------variables-----------------------------------*/
+/*==========================================================*/
+:root {
+
+  --primary-font: 'Roboto', sans-serif;
+  --secondry-font: 'Quicksand', sans-serif;
+
+
+  --body-bg-color: #ffffff;
+
+  --primary-color: #4287f5;
+  --secondry-color: #ffffff;
+  --third-color: #000000;
+
+
+
+  --primary-color-dark: #004bc3;
+  --secondry-color-dark: #ffffff;
+  --third-color-dark: #000000;
+
+
+
+
+
+  --primary-text-color: #000000;
+  --secondry-text-color: #ffffff;
+  --third-text-color: #4287f5;
+
+
+  /*
+   --shadow: #555;
+
+  
+  --button-bg: #a855f7;
+  --button-border: #a855f7;
+  --button-color: #a855f7;
+  --button-hover: #8329d8;
+  --button-active: #366d99;
+
+
+  --social-icons: #fff;
+
+  --box-shadow: #000000; */
+}
+
+
+
+
+
+
+
+
+/*==========================================================*/
+/*--------------media queries rem responsiveness------------*/
+/*==========================================================*/
+
+
+
+/* when the screen width is 390 pixels or less */
+@media (max-width: 390px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+/* when the screen width is 390 pixels or more */
+@media (min-width: 390px) and (max-width: 600px) {
+
+  /*ipone 12*/
+  :root {
+    font-size: 14px;
+  }
+}
+
+/* when the screen width is 500 pixels or more */
+@media (min-width: 690px) and (max-width: 900px) {
+
+  :root {
+    font-size: 16px;
+  }
+}
+
+/* when the screen width is 640 pixels or more */
+@media (min-width: 900px) and (max-width: 1224px) {
+
+  :root {
+    font-size: 18px;
+  }
+}
+
+
+/* when the screen width is 1224 pixels or more */
+@media (min-width: 1224px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+/*==========================================================*/
+/*---------------------CSS RESET----------------------------*/
+/*==========================================================*/
+
+
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+
+body {
+  background-color: var(--body-bg-color);
+
+  font-family: var(--primary-font);
+  min-height: 100vh;
+  line-height: 1.5;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Make images easier to work with */
+img,
+picture,
+figure,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Added to body. This makes transitions only after page load. Later removed using JS */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/*
+==========================================
+   utiliti classes
+==========================================
+*/
+
+button {
+
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.container {
+  max-width: 1224px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 1.25rem;
+
+}
+
+
+
+
+
+/* ================================================================================= */
+/* ================================================================================= */
+/* ================================================================================= */
+/* ================================================================================= */
+
+
+
+
+
+
+/*
+==========================================
+   custom design
+==========================================
+*/
+
+/*
+==========================================
+   Header Design
+==========================================
+*/
+
+
+
+
+
+/* when the screen width is 1000 pixels or less */
+@media (max-width: 1000) {
+
+  .c-header.c-dark-mode{
+    padding: 20px !important; 
+    margin: 0px !important; 
+  }
+
+}
+
+
+
+.c-header{
+  margin-top: -10px;
+  /* background-color: var(--primary-color);s */
+}
