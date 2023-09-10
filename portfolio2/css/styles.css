@@ -350,7 +350,7 @@ section {
 
   border-radius: 100%;
 
-  background-image: url('/luqmanmatloob.github.io/portfolio2/images/img-bg.svg');
+  background-image: url('images/img-bg.svg');
   /* Replace 'your-image-url.jpg' with your actual image file path or URL */
   background-size: cover;
   /* Adjust this property as needed */
@@ -371,7 +371,7 @@ section {
 .footer {
   height: 30vh;
 
-  background-image: url('/luqmanmatloob.github.io/portfolio2/images/wave.svg');
+  background-image: url('images/wave.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
