@@ -21,6 +21,7 @@
 /*--------------media queries rem responsiveness for typography mainly------------*/
 /*================================================================================*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 /* when the screen width is 390 pixels or less */
@@ -65,15 +66,6 @@
 
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   /* Background Color */
   --primary-color: #4287f5;
@@ -88,13 +80,28 @@
   --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
   --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
-  / --primary-font: Poppins, sans-serif;
+  
+  
+  --primary-font: sans-serif, ;
   --primary-text: white;
   --secondry-text: #000000;
 }
 
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
-  font-family: var(--primary-font);
+  font-family: sans-serif, monospace;
   background-color: var(--b);
 }
 
