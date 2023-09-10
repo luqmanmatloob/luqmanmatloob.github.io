@@ -22,7 +22,7 @@
 /*================================================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Maitree:wght@200;400;500&display=swap');
 
 /* when the screen width is 390 pixels or less */
 @media (max-width: 390px) {
@@ -71,7 +71,7 @@
   --primary-color: #4287f5;
   --secondary-color: #ffffff;
   --third-color: #000000;
---bg: #091020;
+  --bg: #091020;
 
 
   --primary-color-dark: #0056e0;
@@ -80,8 +80,8 @@
   --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
   --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
-  
-  
+
+
   --primary-font: sans-serif, ;
   --primary-text: white;
   --secondry-text: #000000;
@@ -103,6 +103,7 @@
 body {
   font-family: sans-serif, monospace;
   background-color: var(--b);
+
 }
 
 a {
@@ -145,20 +146,38 @@ section {
 }
 
 
+
+
+
+
+
+
+
+/* ==================================================================== */
+/* --------------===========-header style------------------------------ */
+/* ==================================================================== */
+
+
+
+
 .c-header {
   height: 70px;
   background-color: var(--primary-color) !important;
-  color: var(--secondary-color);
 }
 
 .c-header .c-logo {
-  font-size: 1.75rem;
+  font-family: 'Maitree', serif;
   font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 1.75rem;
   border: transparent 2px solid;
   border-radius: 15px;
   cursor: pointer;
   margin-bottom: 5px;
   padding: 5px !important;
+  transition: all .4s ease-in-out;
+
+
 
 }
 
@@ -170,11 +189,11 @@ section {
 .c-header a {
   color: var(--secondary-color);
   font-size: 18px;
-  font-weight: bold;
   border: transparent 2px solid;
   border-radius: 10px;
   padding: 0px 5px !important;
   margin-bottom: 5px;
+  transition: all .4s ease-in-out;
 
 }
 
@@ -193,8 +212,8 @@ section {
     padding-top: 30px;
     /* padding: 0px 20px;
       width: 100vw !important;*/
-      background-color: white;
-      margin-top: 10px ;
+    background-color: white;
+    margin-top: 10px;
 
   }
 
@@ -292,25 +311,70 @@ section {
 }
 
 
-.c-hero-left{
-}
-.c-hero-left h3{
+.c-hero-left {}
+
+.c-hero-left h3 {
   font-size: 1.25rem;
 
+
+  font-weight: bolder;
+  background: linear-gradient(135deg, var(--primary-color-dark), rgb(255, 0, 43));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
 }
 
-.c-hero-left h1{
+.c-hero-left h1 {
   font-size: 2.75rem;
   font-weight: bolder;
 
 }
 
-.c-hero-left p{
+
+.h1-name {
+  font-weight: bold;
+  background: linear-gradient(135deg, var(--primary-color-dark), var(--third-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
+}
+
+.c-hero-left p {
   font-size: 1rem;
 
 }
 
-.c-hero-right img{
+.c-hero-right img {
 
   border-radius: 100%;
+
+  background-image: url('/luqmanmatloob.github.io/portfolio2/images/img-bg.svg');
+  /* Replace 'your-image-url.jpg' with your actual image file path or URL */
+  background-size: cover;
+  /* Adjust this property as needed */
+  background-position: center center;
+  /* Adjust this property as needed */
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  height: 30vh;
+
+  background-image: url('/luqmanmatloob.github.io/portfolio2/images/wave.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* opacity: 0.2; */
 }
