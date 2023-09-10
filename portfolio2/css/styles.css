@@ -26,7 +26,7 @@
 /* when the screen width is 390 pixels or less */
 @media (max-width: 390px) {
   :root {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -35,7 +35,7 @@
 
   /*ipone 12*/
   :root {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
