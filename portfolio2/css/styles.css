@@ -351,7 +351,11 @@ section {
 
   border-radius: 100%;
 
+<<<<<<< HEAD
   background-image: url('/portfolio2/images/img-bg.svg');
+=======
+  background-image: url('/images/img-bg.svg');
+>>>>>>> ee498a3dfd8b291992c7e0f76314d4bafa35fd3a
   /* Replace 'your-image-url.jpg' with your actual image file path or URL */
   background-size: cover;
   /* Adjust this property as needed */
@@ -371,13 +375,18 @@ section {
 .c-footer {
   height: 30vh;
 
+<<<<<<< HEAD
   background-image: url('/portfolio2/images/wave.svg');
+=======
+  background-image: url('/images/wave.svg');
+>>>>>>> ee498a3dfd8b291992c7e0f76314d4bafa35fd3a
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
   /* opacity: 0.2; */
 }
+<<<<<<< HEAD
 
 .margin-left--20{
   margin-left: -20px;
@@ -387,3 +396,5 @@ section {
 .portfolio p{
   font-size: 0.85rem;
 }
+=======
+>>>>>>> ee498a3dfd8b291992c7e0f76314d4bafa35fd3a
