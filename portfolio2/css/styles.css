@@ -163,6 +163,7 @@ section {
 .c-header {
   height: 70px;
   background-color: var(--primary-color) !important;
+  margin-bottom: 100px;
 }
 
 .c-header .c-logo {
@@ -350,7 +351,7 @@ section {
 
   border-radius: 100%;
 
-  background-image: url('/luqmanmatloob.github.io/portfolio2/images/img-bg.svg');
+  background-image: url('/portfolio2/images/img-bg.svg');
   /* Replace 'your-image-url.jpg' with your actual image file path or URL */
   background-size: cover;
   /* Adjust this property as needed */
@@ -367,14 +368,22 @@ section {
 
 
 
-
-.footer {
+.c-footer {
   height: 30vh;
 
-  background-image: url('/luqmanmatloob.github.io/portfolio2/images/wave.svg');
+  background-image: url('/portfolio2/images/wave.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
   /* opacity: 0.2; */
+}
+
+.margin-left--20{
+  margin-left: -20px;
+}
+
+.about p,
+.portfolio p{
+  font-size: 0.85rem;
 }

@@ -2,6 +2,7 @@
 @media (max-width: 575.98px) {
 
   /* Your styles for extra small devices here */
+  .about img,
   .hero .c-img {
     width: 200px;
   }
@@ -20,19 +21,32 @@
     font-weight: bolder;
 
   }
+  .about img{
+    margin-top: 0px !important;
+    
+  }
+  
+  .about h2{
+    margin: 0px 0px 0px 0px !important;
+    
+  }
   
 }
 
 /* Small Devices (Tablets) */
 @media (min-width: 576px) {
   /* Your styles for small devices here */
-
+  .about img,
   .hero .c-img {
-    width: 300px;
+    width: 300px ;
   }
 
   .c-hero-left {
     padding-top: 60px;
+  }
+
+  .about h2{
+    padding-top: 40px;
   }
 
 
@@ -42,6 +56,7 @@
 @media (min-width: 768px) {
 
   /* Your styles for medium devices here */
+  .about img,
   .hero .c-img {
     width: 400px;
   }
@@ -49,6 +64,7 @@
   .c-hero-left {
     padding-top: 60px;
   }
+
 
 
 
@@ -72,6 +88,10 @@
   /* Your styles for extra large devices here */
   .c-hero-left {
     padding-top: 40px;
+  }
+
+  .about img{
+    margin-top: -10%;
   }
 
 }
