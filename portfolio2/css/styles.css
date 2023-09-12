@@ -311,8 +311,12 @@ section {
   color: var(--primary-color);
 }
 
+.hero{
+  margin-top: 150px;
+}
 
-.c-hero-left {}
+.c-hero-left {
+}
 
 .c-hero-left h3 {
   font-size: 1.25rem;
@@ -350,17 +354,9 @@ section {
 .c-hero-right img {
 
   border-radius: 100%;
-
-<<<<<<< HEAD
   background-image: url('/portfolio2/images/img-bg.svg');
-=======
-  background-image: url('/images/img-bg.svg');
->>>>>>> ee498a3dfd8b291992c7e0f76314d4bafa35fd3a
-  /* Replace 'your-image-url.jpg' with your actual image file path or URL */
   background-size: cover;
-  /* Adjust this property as needed */
   background-position: center center;
-  /* Adjust this property as needed */
   background-repeat: no-repeat;
 }
 
@@ -372,21 +368,6 @@ section {
 
 
 
-.c-footer {
-  height: 30vh;
-
-<<<<<<< HEAD
-  background-image: url('/portfolio2/images/wave.svg');
-=======
-  background-image: url('/images/wave.svg');
->>>>>>> ee498a3dfd8b291992c7e0f76314d4bafa35fd3a
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  /* opacity: 0.2; */
-}
-<<<<<<< HEAD
 
 .margin-left--20{
   margin-left: -20px;
@@ -396,5 +377,45 @@ section {
 .portfolio p{
   font-size: 0.85rem;
 }
-=======
->>>>>>> ee498a3dfd8b291992c7e0f76314d4bafa35fd3a
+
+.c-contact{
+  margin:  80px 0px 0px 0px !important;
+
+
+}
+
+.c-footer {
+
+  /* background-image: url('/images/wave.svg') ;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
+
+  background-color: var(--primary-color-dark);
+  padding:  20px 0px 5px 0px;
+
+  margin:  80px 0px 0px 0px !important;
+
+}
+
+.c-footer li{
+
+  list-style: none;
+}
+
+.c-footer p,
+.c-footer li a{
+
+  color: var(--secondary-color);
+  font-size: 0.90rem;
+  border-bottom: solid 1px transparent;
+  transition: all .4s ease-in-out;
+
+}
+
+.c-footer li a:hover{
+
+  border-bottom: var(--secondary-color) solid;
+
+
+}
