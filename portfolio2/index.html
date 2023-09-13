@@ -5,7 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Enter your description here" />
+
+
+  <!-- seo -->
+  
+  
+  <meta name="Description" content="Enter your description here">
+
+   <!-- SEO Meta Tags -->
+   <meta name="description" content="Your description here">
+   <link rel="canonical" href="https://www.yourwebsite.com">
+   <meta name="robots" content="index, follow">
 
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +23,7 @@
   <!-- font aeowsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -24,7 +34,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
 
-  <link rel="icon" href="images/favicon.png" />
+  <link rel="icon" href="images/favicon.png">
 
 
 
@@ -42,36 +52,37 @@
 
 
 
-  <div class="c-header fixed-top">
+  <header class="c-header fixed-top">
     <div class="container ">
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <h3 class="navbar-brand c-logo" href="#">LUQMAN</h3>
+          <h3 class="navbar-brand "><a href="#home" class="c-logo">LUQMAN</a></h3>
 
           <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fa-solid fa-bars-staggered navbar-toggler-icon text-white"
-              style="color: white; font-size: 1.75 rem;"></i>
+            <i class="fa-solid fa-bars-staggered navbar-toggler-icon text-white"></i>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end c-mobile-nav" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Portfolio</a>
-              <a class="nav-link" href="#">Contact</a>
-              <button class="nav-link main-btn" href="#">Hire me</button>
+              <a class="nav-link active c-header-anchor" aria-current="page" href="#">Home</a>
+              <a class="nav-link c-header-anchor" href="#">About</a>
+              <a class="nav-link c-header-anchor" href="#">Portfolio</a>
+              <a class="nav-link c-header-anchor" href="#">Contact</a>
+              <!-- <a class="nav-link main-btn" href="#contact">Hire me</a> -->
             </div>
           </div>
         </div>
       </nav>
     </div>
 
-  </div>
+  </header>
 
-  <div class="hero container">
+
+
+  <div class="hero container" id="home">
     <div class="text-center text-lg-start m-lg-5">
       <div class="row justify-content-between">
 
@@ -89,8 +100,8 @@
             specializing in creating engaging and responsive web experiences.
           </p>
           <div class="justify-content-center">
-            <a href="#portfolio"><button class="btn">Portfolio</button></a>
-            <a href="#contact"><button class="btn">Contact</button></a>
+            <a href="#portfolio" class="btn">Portfolio</a>
+            <a href="#contact" class="btn">Contact</a>
           </div>
         </div>
       </div>
@@ -100,7 +111,7 @@
 
 
 
-  <section class="about" ;">
+  <section class="about">
     <div class="container">
 
       <div class="row">
@@ -171,7 +182,7 @@
 
       <div class="row text-center pt-5 ">
         <div class="col ">
-          <a href="" class="shadow-lg"><button class="btn ">View All</button></a>
+          <a href="" class="shadow-lg btn ">View All</a>
         </div>
       </div>
     </div>
@@ -183,7 +194,7 @@
 
 
   <!-- Contact section -->
-  <section class="c-contact" class="contact_wrapper">
+  <section class="c-contact contact_wrapper">
     <div class="container">
       <div class="row justify-content-center align-items-center">
 
@@ -193,24 +204,24 @@
           </div>
         </div>
 
-        <div class="col-lg-6 justify-content-center order-2 order-lg-1 pe-lg-5 text-lg-start align-content-center text-center">
+        <div
+          class="col-lg-6 justify-content-center order-2 order-lg-1 pe-lg-5 text-lg-start align-content-center text-center">
 
-            <form>
-              <div class="mb-4">
-                <input type="text" class="form-control" placeholder="Your Name..." autocomplete="off">
-              </div>
-              <div class="mb-4">
-                <input type="number" class="form-control" placeholder="Your Phone..." autocomplete="off">
-              </div>
-              <div class="mb-4">
-                <input type="email" class="form-control" placeholder="Your Email..." autocomplete="off">
-              </div>
-              <div class="mb-4">
-                <input cols="40" rows="4" class="form-control" id="message" placeholder="Write a Message..."
-                  autocomplete="off">
-              </div>
-              <button type="submit" class="btn">Submit</button>
-            </form>
+          <form>
+            <div class="mb-4">
+              <input type="text" class="form-control" placeholder="Your Name..." autocomplete="off">
+            </div>
+            <div class="mb-4">
+              <input type="number" class="form-control" placeholder="Your Phone..." autocomplete="off">
+            </div>
+            <div class="mb-4">
+              <input type="email" class="form-control" placeholder="Your Email..." autocomplete="off">
+            </div>
+            <div class="mb-4">
+              <input type="text" class="form-control" placeholder="Write a Message..." autocomplete="off">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
         </div>
 
       </div>
@@ -220,7 +231,7 @@
 
 
   <!-- Footer section -->
-  <section class="footer_wrapper mt-3 mt-md-0 c-footer">
+  <footer class="footer_wrapper mt-3 mt-md-0 c-footer">
     <div class="container">
       <div class="row">
 
@@ -239,15 +250,9 @@
           </ul>
         </div>
 
-
-        <!-- <hr> -->
-
-
       </div>
-      <!-- <div class="row">
-        <div class="col-12 text-center pt3"><p>Copyright © 2022. All Rights Reserved</p></div>
-      </div> -->
-  </section>
+    </div>
+  </footer>
 
   <!-- Footer section exit -->
 

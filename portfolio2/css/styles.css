@@ -14,57 +14,8 @@
 
 
 
-
-
-
-/*================================================================================*/
-/*--------------media queries rem responsiveness for typography mainly------------*/
-/*================================================================================*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Maitree:wght@200;400;500&display=swap');
-
-/* when the screen width is 390 pixels or less */
-@media (max-width: 390px) {
-  :root {
-    font-size: 14px;
-  }
-}
-
-/* when the screen width is 390 pixels or more */
-@media (min-width: 390px) and (max-width: 600px) {
-
-  /*ipone 12*/
-  :root {
-    font-size: 16px;
-  }
-}
-
-/* when the screen width is 500 pixels or more */
-@media (min-width: 690px) and (max-width: 900px) {
-
-  :root {
-    font-size: 16px;
-  }
-}
-
-/* when the screen width is 640 pixels or more */
-@media (min-width: 900px) and (max-width: 1224px) {
-
-  :root {
-    font-size: 18px;
-  }
-}
-
-
-/* when the screen width is 1224 pixels or more */
-@media (min-width: 1224px) {
-  :root {
-    font-size: 20px;
-  }
-}
-
-
 
 :root {
   /* Background Color */
@@ -175,7 +126,7 @@ section {
   border-radius: 15px;
   cursor: pointer;
   margin-bottom: 5px;
-  padding: 5px !important;
+  padding: 0px 10px !important;
   transition: all .4s ease-in-out;
 
 
@@ -186,6 +137,7 @@ section {
   border-color: var(--secondary-color);
 
 }
+
 
 .c-header a {
   color: var(--secondary-color);
@@ -245,7 +197,7 @@ section {
 
 .main-btn {
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 10px ;
   transition: all .4s ease-in-out;
   padding: 0px 27px !important;
   background-color: transparent;

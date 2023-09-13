@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jack's Four-Page Website</title>
+
+    <style>
+        /* Common styles for all pages */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        /* Page-specific styles */
+        .page {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Background colors for each section */
+        #home {
+            background-color: #f0f0f0;
+        }
+
+        #about {
+            background-color: #e0e0e0;
+        }
+
+        #portfolio {
+            background-color: #d0d0d0;
+        }
+
+        #contact {
+            background-color: #c0c0c0;
+        }
+
+        /* Show/hide the pages */
+        .page.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="home-link">Home</a>
+            <a id="about-link">About</a>
+            <a id="portfolio-link">Portfolio</a>
+            <a id="contact-link">Contact</a>
+        </nav>
+    </header>
+
+    <div id="home" class="page active">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the content of the Home page.</p>
+    </div>
+
+    <div id="about" class="page">
+        <h1>About Me</h1>
+        <p>This is the About page.</p>
+    </div>
+
+    <div id="portfolio" class="page">
+        <h1>Portfolio</h1>
+        <p>This is the Portfolio page.</p>
+    </div>
+
+    <div id="contact" class="page">
+        <h1>Contact Me</h1>
+        <p>This is the Contact page.</p>
+    </div>
+
+    <script>
+        const homeLink = document.getElementById("home-link");
+        const aboutLink = document.getElementById("about-link");
+        const portfolioLink = document.getElementById("portfolio-link");
+        const contactLink = document.getElementById("contact-link");
+
+        const pages = document.querySelectorAll(".page");
+
+        function showPage(pageId) {
+            pages.forEach((page) => {
+                page.classList.remove("active");
+            });
+
+            const pageToShow = document.getElementById(pageId);
+            pageToShow.classList.add("active");
+        }
+
+        homeLink.addEventListener("click", () => showPage("home"));
+        aboutLink.addEventListener("click", () => showPage("about"));
+        portfolioLink.addEventListener("click", () => showPage("portfolio"));
+        contactLink.addEventListener("click", () => showPage("contact"));
+    </script>
+</body>
+
+</html>
