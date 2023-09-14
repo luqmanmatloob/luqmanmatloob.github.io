@@ -27,11 +27,11 @@
 
   --primary-color-dark: #0056e0;
   --secondary-color-dark: #cacaca;
-
+/* 
   --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
   --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
-
+ */
 
   --primary-font: sans-serif, ;
   --primary-text: white;
