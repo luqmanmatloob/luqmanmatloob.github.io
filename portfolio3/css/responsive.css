@@ -1,6 +1,14 @@
 @media (max-width: 575px) {
     /* less than 575 */
     /*  extra small devices  */
+
+
+    /* header */
+    /* hero */
+    /* how it works */
+    /* popular packages */
+    /* global promotions */
+    /* footer */
  
     
   }
@@ -8,6 +16,15 @@
   @media (min-width: 576px) { 
      /* greater than 576 */
     /*  small devices  */
+
+
+    
+    /* header */
+    /* hero */
+    /* how it works */
+    /* popular packages */
+    /* global promotions */
+    /* footer */
     
   
   
@@ -15,6 +32,15 @@
   
   @media (min-width: 768px) {
     /*  medium devices  */
+
+
+    
+    /* header */
+    /* hero */
+    /* how it works */
+    /* popular packages */
+    /* global promotions */
+    /* footer */
     
   
   
@@ -22,6 +48,15 @@
   
   @media (min-width: 992px) {
     /*  large devices here */
+
+
+    
+    /* header */
+    /* hero */
+    /* how it works */
+    /* popular packages */
+    /* global promotions */
+    /* footer */
   
   
    
@@ -30,6 +65,15 @@
   
   @media (min-width: 1200px) {
     /* extra large devices  */
+
+
+    
+    /* header */
+    /* hero */
+    /* how it works */
+    /* popular packages */
+    /* global promotions */
+    /* footer */
    
   
   }
