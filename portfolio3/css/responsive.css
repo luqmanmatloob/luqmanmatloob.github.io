@@ -1,83 +1,152 @@
 @media (max-width: 575px) {
-    /* less than 575 */
-    /*  extra small devices  */
 
-
-    /* header */
-    /* hero */
-    /* how it works */
-    /* popular packages */
-    /* global promotions */
-    /* footer */
- 
-    
+  /* less than 575 */
+  /*  extra small devices  */
+  .hero_right {
+    width: 80%;
+    margin: auto;
   }
-  
-  @media (min-width: 576px) { 
-     /* greater than 576 */
-    /*  small devices  */
 
+  .hero_left {
+    /* width: 80%; */
+    margin: auto;
 
-    
-    /* header */
-    /* hero */
-    /* how it works */
-    /* popular packages */
-    /* global promotions */
-    /* footer */
-    
-  
-  
   }
-  
-  @media (min-width: 768px) {
-    /*  medium devices  */
 
+  .hero_left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-    
-    /* header */
-    /* hero */
-    /* how it works */
-    /* popular packages */
-    /* global promotions */
-    /* footer */
-    
-  
-  
   }
-  
-  @media (min-width: 992px) {
-    /*  large devices here */
 
+  .hero_left {
+    /* width: 80%; */
+    margin: auto;
 
-    
-    /* header */
-    /* hero */
-    /* how it works */
-    /* popular packages */
-    /* global promotions */
-    /* footer */
-  
-  
-   
-  
   }
-  
-  @media (min-width: 1200px) {
-    /* extra large devices  */
 
+  .hero_left h1 {
 
-    
-    /* header */
-    /* hero */
-    /* how it works */
-    /* popular packages */
-    /* global promotions */
-    /* footer */
-   
-  
+    text-align: center;
+    margin-top: -30px !important;
   }
-  
-  
-  
-  
+
+  .hero_left p {
+
+    width: 80%;
+    text-align: center;
+  }
+
+
+  /* header */
+  /* hero */
+  /* how it works */
+  /* popular packages */
+  /* global promotions */
+  /* footer */
+
+
+}
+
+
+
+@media (min-width: 576px) {
+  /* greater than 576 */
+  /*  small devices  */
+
+
+
+
+  .hero_right {
+    width: 80%;
+    margin: auto;
+
+  }
+
+
+  /* header */
+  /* hero */
+  /* how it works */
+  /* popular packages */
+  /* global promotions */
+  /* footer */
+
+
+
+}
+
+@media (min-width: 768px) {
+  /*  medium devices  */
+
+  .hero_right {
+    padding-top: 60px;
+  }
+
+
+
+  /* header */
+  /* hero */
+  /* how it works */
+  /* popular packages */
+  /* global promotions */
+  /* footer */
+
+
+
+}
+
+@media (min-width: 992px) {
+  /*  large devices here */
+
+  .hero_right {
+    padding-top: 40px;
+  }
+
+  /* header */
+  /* hero */
+  /* how it works */
+  /* popular packages */
+  /* global promotions */
+  /* footer */
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+  /* extra large devices  */
+
+
+
+  /* header */
+  /* hero */
+  /* how it works */
+  /* popular packages */
+  /* global promotions */
+  /* footer */
+
+
+}
+
+
+
+
+
+
+
+
+
+/* extra */
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero_left h1 {
+
+    margin-top: -30px !important;
+  }
+}
