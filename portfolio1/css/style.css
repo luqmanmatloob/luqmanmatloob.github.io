@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  /* width: 100vw; */
+  position: fixed;
+  top: 0vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding: 5px 40px;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0px 5px 5px 0px rgb(215, 213, 213);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+.logo {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  /* border: solid black 2px */
+}
+
+.header ul li a {
+  text-decoration: none;
+  padding: 15px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  transition: transform 0.2s;
+}
+
+.header ul li a:hover {
+  transform: scale(1.2);
+}
+
+.header ul li {
+  display: flex;
+  align-items: center;
+}
+
+.h-btn {
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid black 2px;
+  transition: transform 0.2s;
+  margin-right: 8vw;
+}
+
+.h-btn:hover {
+  transform: scale(1.2);
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  line-height: 70px;
+  margin-right: 40px;
+}
+
+.hero {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 60px 30px 60px;
+}
+
+.h-left {
+  width: 69vw;
+}
+.h-right {
+  width: 30vw;
+}
+
+.h-left h3 {
+  font-size: 1.2em;
+  padding: 20px 0px;
+}
+
+.h-left p {
+  padding: 20px 0px;
+}
+
+.h-left h1 {
+  font-size: 3em;
+  font-weight: bolds;
+}
+
+.hero-img {
+  width: inherit;
+  border-radius: 70%;
+}
+
+.btn {
+  width: 150px; /* You can adjust this width as needed */
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid black 2px;
+  transition: transform 0.2s;
+  margin: 5px 10px;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.about {
+  padding-top: 70px;
+
+  /* border-top: 1px solid rgb(0, 0, 0); */
+  margin: 5vh 0vh 20vh 0vh;
+}
+
+.about h3 {
+  padding-top: 8px;
+  text-align: center;
+  margin: 5% 20%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.edu-exp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exp-container {
+  border: solid black 1px;
+  padding: 0px 20px 20px 30px;
+  margin: 10px 5px;
+  border-radius: 10%;
+}
+
+.edu-container {
+  border: solid black 1px;
+  padding: 0px 20px 20px 30px;
+  margin: 10px 5px;
+  border-radius: 10%;
+}
+
+.text-container {
+  margin: 30px 20vw;
+}
+
+.portfolio {
+  padding-top: 70px;
+
+  /* border-top: 1px solid rgb(0, 0, 0); */
+  margin: 5vh 0vh 20vh 0vh;
+}
+
+.portfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio h3 {
+  padding-top: 8px;
+  text-align: center;
+  margin: 5% 20%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.portfolio-item {
+  border: solid black 1px;
+  padding: 0px 20px 20px 30px;
+  margin: 10px 5px;
+  border-radius: 3%;
+}
+
+.p-img {
+  padding: 3px;
+  margin: 20px 0px;
+  /* height: 300px; */
+  border: double 1px black;
+  /* background-color: rgba(0, 0, 0, 10); */
+}
+
+.portfolio-container p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.portfolio-container button {
+  margin: 20px 0px;
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid black 2px;
+  transition: transform 0.2s;
+}
+
+.portfolio-container button:hover {
+  transform: scale(1.2);
+}
+
+.contact {
+  padding-top: 50px;
+
+  /* border-top: 1px solid rgb(0, 0, 0); */
+  margin: 5vh 0vh 20vh 0vh;
+}
+
+.contact h3 {
+  padding-top: 8px;
+  text-align: center;
+  margin: 5% 20%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* width: 60vw; */
+  justify-content: center;
+  align-items: center;
+}
+
+.form input,.form textarea{
+width: 300px;
+height: 40px;
+padding-right: 40px;
+margin: 15px;
+color: black;
+border: solid 1px black;
+border-radius: 10px;
+}
+
+.form textarea{
+  height: 110px; /* Adjust the height as needed */
+  resize: vertical; 
+}
+

@@ -1,0 +1,64 @@
+@media (max-width: 700px) {
+  header .h-btn {
+    display: none;
+  }
+
+  .header {
+    padding: 0px 40px;
+    justify-content: space-between;
+  }
+
+  label {
+    font-size: 28px;
+    cursor: pointer;
+    display: block;
+    color: black;
+    position: absolute;
+    right: 10vw;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+    border: solid 2px red;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: none;
+  }
+
+  .header ul {
+    position: absolute;
+    right: 0vw;
+    top: 10vh;
+    width: 100vw;
+    border-bottom: solid rgb(199, 199, 199) 3px;
+  }
+
+  .header ul li {
+    display: block;
+    background-color: white;
+    text-align: center;
+  }
+
+  .header ul li a {
+    display: block;
+  }
+
+  .hero {
+    flex-wrap: wrap-reverse;
+  }
+  /* .h-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } */
+
+  .h-left h3 {
+    font-size: 1em;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+}

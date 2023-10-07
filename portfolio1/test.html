@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background-color: #000;
+            opacity: 0.6;
+            animation: rainAnimation 10s linear infinite, rainRotation 15s linear infinite;
+        }
+
+        @keyframes rainAnimation {
+            from {
+                transform: translateY(-20px) translateX(0) translateZ(0);
+            }
+            to {
+                transform: translateY(100vh) translateX(10px) translateZ(0);
+            }
+        }
+
+        @keyframes rainRotation {
+            from {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Create 30 .raindrop elements with different styles -->
+    <div class="raindrop" style="width: 1px; height: 15px;"></div>
+    <div class="raindrop" style="width: 3px; height: 10px;"></div>
+    <div class="raindrop" style="width: 2px; height: 30px;"></div>
+    <!-- Add more .raindrop elements with different styles here -->
+
+    <script>
+        // JavaScript to create additional raindrops with random sizes and positions
+        const numRaindrops = 27; // Adjust the number of raindrops
+        const container = document.body;
+
+        for (let i = 0; i < numRaindrops; i++) {
+            const raindrop = document.createElement("div");
+            raindrop.classList.add("raindrop");
+            raindrop.style.width = Math.random() * 3 + 1 + "px"; // Random width between 1px and 4px
+            raindrop.style.height = Math.random() * 30 + 10 + "px"; // Random height between 10px and 40px
+            raindrop.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+            raindrop.style.top = Math.random() * 100 + "vh"; // Random vertical position
+            container.appendChild(raindrop);
+        }
+    </script>
+</body>
+</html>
