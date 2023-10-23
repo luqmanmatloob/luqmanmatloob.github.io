@@ -2,12 +2,22 @@
   header .h-btn {
     display: none;
   }
+  header ul {
+    display: none;
+  }
+  .hamburger{
+  display: block;
+  }
 
   .header {
     padding: 0px 40px;
     justify-content: space-between;
   }
-
+  
+.dropdown{
+  display: block;
+}
+/* 
   label {
     font-size: 28px;
     cursor: pointer;
@@ -15,17 +25,17 @@
     color: black;
     position: absolute;
     right: 10vw;
-  }
+  } */
 
-  input[type="checkbox"] {
+  /* input[type="checkbox"] {
     display: none;
     border: solid 2px red;
   }
 
   input[type="checkbox"]:checked ~ ul {
     display: none;
-  }
-
+  } */
+/* 
   .header ul {
     position: absolute;
     right: 0vw;
@@ -42,7 +52,7 @@
 
   .header ul li a {
     display: block;
-  }
+  } */
 
   .hero {
     flex-wrap: wrap-reverse;
