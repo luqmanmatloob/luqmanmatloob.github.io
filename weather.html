@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+</head>
+
+<body>
+<center>
+    <div class="container">
+        <h1>Weather</h1>
+        <div class="weather-container">
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <button onclick="getWeather()">Enter</button>
+            <div id="weatherInfo"></div>
+        </div>
+    </div>
+
+</center>
+
+    <script>
+
+
+
+const apiKey = '8212f2ee733e67d9febf1dfe26b7cd3d';
+
+        function getWeather() {
+            const cityInput = document.getElementById('cityInput');
+            const cityName = cityInput.value;
+
+            if (cityName === '') {
+                alert('Please enter a city name.');
+                return;
+            }
+
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+
+            fetch(apiUrl)
+
+                // first then to convert into json
+                .then(response => response.json())
+
+                // second then to used api data,
+                .then(data => {
+                    displayWeather(data);
+                })
+                
+                // used to handle errors
+                .catch(error => {
+                    alert('Error, Invalid city name');
+                });
+        }
+
+
+
+        function displayWeather(data) {
+            const weatherInfoDiv = document.getElementById('weatherInfo');
+
+            const cityName = data.name;
+            const temperature = data.main.temp;
+            const description = data.weather[0].description;
+
+            const weatherHtml = `
+        <h2>${cityName}</h2>
+        <p>Temperature: ${temperature}°C</p>
+        <p>Description: ${description}</p>
+    `;
+
+            weatherInfoDiv.innerHTML = weatherHtml;
+        }
+
+
+
+
+
+
+
+        //     fetch('https://jsonplaceholder.typicode.com/users')
+        //   .then(response => response.json())
+        //   .then(json => console.log(json))
+
+
+    </script>
+
+</body>
+
+</html>
