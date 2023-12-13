@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/weather/output.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div>
+        
+    </div>
+    <div class="flex items-center justify-center min-h-screen bg-[#b8feff] ">
+        <div class="p-8 rounded shadow-xl bg-[#97f3f5] mx-3">
+            <h1 class="text-2xl font-bold mb-4">Weather</h1>
+            <div class="weather-container">
+                <!-- Added 'onkeydown' attribute to trigger the button click on Enter key -->
+                <input type="text" id="cityInput" placeholder="Enter city" class="border p-2 mb-2 rounded"
+                    onkeydown="handleEnterKey(event)">
+                <button onclick="getWeather()" class="bg-blue-500 text-white p-2 rounded">Enter</button>
+                <div id="weatherInfo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = '8212f2ee733e67d9febf1dfe26b7cd3d';
+
+
+        function handleEnterKey(event) {
+            if (event.key === 'Enter') {
+                getWeather();
+            }
+        }
+
+        function getWeather() {
+            const cityInput = document.getElementById('cityInput');
+            const cityName = cityInput.value;
+
+            if (cityName === '') {
+                alert('Please enter a city name.');
+                return;
+            }
+
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    displayWeather(data);
+                })
+                .catch(error => {
+                    alert('Error, Invalid city name');
+                });
+        }
+
+        function displayWeather(data) {
+            const weatherInfoDiv = document.getElementById('weatherInfo');
+            const cityName = data.name;
+            const temperature = data.main.temp;
+            const description = data.weather[0].description;
+
+            const weatherHtml = `
+                <h2>${cityName}</h2>
+                <p>Temperature: ${temperature}°C</p>
+                <p>Description: ${description}</p>
+            `;
+
+            weatherInfoDiv.innerHTML = weatherHtml;
+        }
+    </script>
+</body>
+
+</html>
