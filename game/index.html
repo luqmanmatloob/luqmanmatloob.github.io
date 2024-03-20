@@ -18,10 +18,21 @@
 			<div class="content">
 				<h1>Guess the Number Game</h1>
 				<p>Guess a number between 1 and 100:</p>
-				<input
-					type="number"
-					id="guessInput" />
-				<button id="guessButton">Submit Guess</button>
+
+				<div class="input-wrapper">
+					<span id="crossBox" class="crossBox"></span>
+					<input
+						type="number"
+						id="guessInput" /><br />
+
+					<span id="tickBox" class="tickBox"></span>
+				</div>
+				<button
+					id="guessButton"
+					class="submit"
+					>Submit Guess</button
+				>
+
 				<p id="message"></p>
 			</div>
 		</div>
